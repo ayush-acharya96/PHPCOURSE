@@ -21,7 +21,7 @@
                 <li><a href="#">
                         <span class="glyphicon glyphicon-list-alt"></span>
                         &nbsp;Add New Post</a> </li>
-                <li><a href="#">
+                <li><a href="Categories.php">
                         <span class="glyphicon glyphicon-tags"></span>
                         &nbsp;Categories</a> </li>
                 <li><a href="#">
@@ -142,5 +142,14 @@
         </div><!-- ending of main area -->
     </div><!-- ending of row -->
 </div><!-- ending of container fluid  -->
+<div id="Footer">
+    <hr><p>Theme By | Ayush Acharya |&copy;2016-2020 --- All right reserved.</p>
+    <a style="color:white; text-decoration: none; cursor: pointer; font-weight: bold;" href="http://ayushacharya.com" target="_blank">
+        <p>
+            Contact me if you want beautiful templates.
+        </p>
+    </a><hr>
+
+</div>
 </body>
 </html>

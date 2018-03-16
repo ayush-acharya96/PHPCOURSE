@@ -19,3 +19,10 @@ body{
     font-weight: bold;
     display: block;
 }
+#Footer {
+    padding: 10px;
+    border-top: 1px solid black;
+    color: #eeeeee;
+    background-color: #004D40;
+    text-align: center;
+}
