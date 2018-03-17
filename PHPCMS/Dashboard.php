@@ -1,3 +1,9 @@
+<?php
+    require_once("Include/Session.php");
+?>
+<?php
+    require_once("Include/Functions.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +48,10 @@
         </div> <!-- Ending of side srea -->
         <div class="col-sm-10">
             <h1>Admin Dashboard</h1>
+            <div><?php
+                    echo Message();
+                    echo SuccessMessage();
+                ?></div>
             <h4>About</h4>
             <p>af dfidf <em>djfl sdkfjf fj efefj</em>
             is a dfkj osdifj oko d fjdkf dsjeofw fpf oefj

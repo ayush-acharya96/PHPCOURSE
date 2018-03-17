@@ -1,16 +1,38 @@
 <?php
-require_once("Include/DB.php");
+    require_once("Include/DB.php");
+?>
+<?php
+    require_once("Include/Session.php");
+?>
+<?php
+    require_once("Include/Functions.php");
 ?>
 <?php
 if(isset($_POST["Submit"])){
-    $Category = mysqli_real_escape_string($_POST["Category"]);
+    $Category = mysql_real_escape_string($_POST["Category"]);
+    date_default_timezone_set('Asia/Kathmandu');
     $CurrentTime = time();
     $DateTime = strftime("%B-%d-%Y %H:%M:%S",$CurrentTime);
     $DateTime;
+    $Admin = "Ayush Acharya";
     if(empty($Category)){
-        echo "All fields must be filed out";
-        header("Location:Dashboard.php");
-        exit;
+        $_SESSION["ErrorMessage"] = "All fields must be filed out.";
+        Redirect_to("Categories.php");
+    } elseif(strlen($Category) > 99){
+        $_SESSION["ErrorMessage"] = "Too long Name.";
+        Redirect_to("Categories.php");
+    } else {
+        global $ConnectingDB;
+        $Query = "INSERT INTO category(datetime,name,creatorname)
+                  VALUES('$DateTime','$Category','$Admin')";
+        $Execute = mysql_query($Query);
+        if($Execute) {
+            $_SESSION["SuccessMessage"] = "Category added successfully.";
+            Redirect_to("Categories.php");
+        } else {
+            $_SESSION["ErrorMessage"] = "Category failed to add.";
+            Redirect_to("Categories.php");
+        }
     }
 }
 ?>
@@ -23,18 +45,24 @@ if(isset($_POST["Submit"])){
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/adminstyle.css">
+    <style>
+        .FieldInfo {
+            color: #00695C;
+            font-family: Bitter, Georgia, "Times New Roman", Times, serif;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
 
         <div class="col-sm-2">
-            <h1>Ayush</h1>
             <ul id="side_menu" class="nav nav-pills nav-stacked">
                 <li><a href="Dashboard.php">
                         <span class="glyphicon glyphicon-th"></span>
                         &nbsp;DashBoard</a></li>
-                <li><a href="#">
+                <li><a href="AddNewPost.php">
                         <span class="glyphicon glyphicon-list-alt"></span>
                         &nbsp;Add New Post</a> </li>
                 <li class="active"><a href="Categories.php">
@@ -58,10 +86,15 @@ if(isset($_POST["Submit"])){
         </div> <!-- Ending of side srea -->
         <div class="col-sm-10">
             <h1>Manage Categories</h1>
+            <?php
+                echo Message();
+                echo SuccessMessage();
+            ?>
+            <div>
             <form action="Categories.php" method="post">
                 <fieldset>
                     <div class="form-group">
-                        <label for="categoryname">Name:</label>
+                        <label for="categoryname"><span class="FieldInfo">Name:</span></label>
                         <input class="form-control" type="text" name="Category" id="categoryname" placeholder="Name">
                     </div>
                     <br>
@@ -70,6 +103,37 @@ if(isset($_POST["Submit"])){
                 </fieldset>
 
             </form>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <th>Sr. No</th>
+                        <th>Date & Time</th>
+                        <th>Category Name</th>
+                        <th>Creator Name</th>
+                    </tr>
+                    <?php
+                        global $ConnectingDB;
+                        $ViewQuery = "SELECT * FROM category ORDER BY datetime DESC ";
+                        $Execute = mysql_query($ViewQuery);
+                        $SrNo = 0;
+                        while($DataRows = mysql_fetch_array($Execute)) {
+                            $Id = $DataRows["id"];
+                            $DateTime = $DataRows["datetime"];
+                            $CategoryName = $DataRows["name"];
+                            $CreatorName = $DataRows["creatorname"];
+                            $SrNo++;
+
+                    ?>
+                    <tr>
+                        <td><?php echo $SrNo; ?></td>
+                        <td><?php echo $DateTime; ?></td>
+                        <td><?php echo $CategoryName; ?></td>
+                        <td><?php echo $CreatorName; ?></td>
+                    </tr>
+                    <?php } ?>
+                </table>
+            </div>
 
         </div><!-- ending of main area -->
     </div><!-- ending of row -->
