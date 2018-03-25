@@ -11,7 +11,7 @@ require_once("Include/Functions.php");
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blog Page</title>
+    <title>Full Blog Post</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -69,7 +69,9 @@ require_once("Include/Functions.php");
                                   category LIKE '%$Search%' OR 
                                   post LIKE '%$Search%'";
                 } else {
-                    $ViewQuery = "SELECT * FROM admin_panel ORDER BY datetime DESC";
+                    $PostIdFromURL = $_GET["id"];
+                    $ViewQuery = "SELECT * FROM admin_panel WHERE id = '$PostIdFromURL'
+                                  ORDER BY datetime DESC";
                 }
                 $Execute = mysql_query($ViewQuery);
                 while($DateRows = mysql_fetch_array($Execute)){
@@ -88,16 +90,12 @@ require_once("Include/Functions.php");
                         <p class="description">Category:<?php echo htmlentities($Category);?>
                         Published on:<?php echo htmlentities($DateTime);?></p>
                         <p class="post">
-                            <?php
-                            if(strlen($Post)>150){
-                                $Post = substr($Post,0,150).'...';
-                            }
-                            echo $Post; ?>
+                            <?php echo $Post; ?>
                         </p>
                     </div>
-                    <a href="FullPost.php?id=<?php echo $PostId; ?>">
-                        <span class="btn btn-info">Read More &rsaquo;&rsaquo;</span>
-                    </a>
+<!--                    <a href="Fu;;Post.php?id=--><?php //echo $PostId; ?><!--">-->
+<!--                        <span class="btn btn-info">Read More &rsaquo;&rsaquo;</span>-->
+<!--                    </a>-->
                 </div>
                 <?php } ?>
             </div>
