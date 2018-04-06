@@ -59,7 +59,7 @@
 <!--            <h1>Ayush</h1>-->
             <ul id="side_menu" class="nav nav-pills nav-stacked">
                 <br><br>
-                <li class="active"><a href="Dashboard.php">
+                <li><a href="Dashboard.php">
                         <span class="glyphicon glyphicon-th"></span>
                         &nbsp;DashBoard</a></li>
                 <li><a href="AddNewPost.php">
@@ -71,7 +71,7 @@
                 <li><a href="#">
                         <span class="glyphicon glyphicon-user"></span>
                         &nbsp;Manage Admin</a> </li>
-                <li><a href="#">
+                <li class="active"><a href="Comments.php">
                         <span class="glyphicon glyphicon-comment"></span>
                         &nbsp;Comments</a> </li>
                 <li><a href="#">
@@ -89,65 +89,84 @@
                 echo Message();
                 echo SuccessMessage();
                 ?></div>
-            <h1>Admin Dashboard</h1>
+            <h1>Un-Approved Comments</h1>
+            <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Comment</th>
+                    <th>Approve</th>
+                    <th>Delete</th>
+                    <th>Details</th>
+                </tr>
+                <?php
+                $connectingDB;
+                $Query = "SELECT *FROM comments WHERE status='OFF'";
+                $Execute = mysql_query($Query);
+                $SrNo = 0;
+                while($DataRows=mysql_fetch_array($Execute)) {
+                    $CommentId = $DataRows['id'];
+                    $CommentDate = $DataRows['datetime'];
+                    $CommentatorName = $DataRows['name'];
+                    $Comment = $DataRows['comment'];
+                    $CommentPostId = $DataRows['admin_panel_id'];
+                    $SrNo++;
+                    if(strlen($Comment) > 20) { $Comment = substr($Comment,0,20).'...';}
+                    if(strlen($CommentatorName) > 10) { $CommentatorName = substr($CommentatorName,0,10).'...';}
+
+                ?>
+                <tr>
+                    <td><?php echo htmlentities($SrNo); ?></td>
+                    <td><?php echo htmlentities($CommentatorName); ?></td>
+                    <td><?php echo htmlentities($CommentDate); ?></td>
+                    <td><?php echo htmlentities($Comment); ?></td>
+                    <td><a href="ApproveComments.php?id=<?php echo $CommentId; ?>"><span class="btn btn-success">Approve</span></a></td>
+                    <td><a href="#"><span class="btn btn-danger">Delete</span></a></td>
+                    <td><a href="#"><span class="btn btn-primry">Live Preview</span></a></td>
+                </tr>
+                <?php } ?>
+            </table>
+        </div>
+            <h1>Approved Comments</h1>
             <div class="table-responsive">
                 <table class="table table-striped table-hover">
                     <tr>
                         <th>No.</th>
-                        <th>Post Title</th>
-                        <th>Date & Time</th>
-                        <th>Auther</th>
-                        <th>Category</th>
-                        <th>Banner</th>
-                        <th>Comments</th>
-                        <th>Action</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Comment</th>
+                        <th>Approve</th>
+                        <th>Delete</th>
                         <th>Details</th>
                     </tr>
                     <?php
-                    $ConnectingDB;
-                    $ViewQuery = "SELECT *FROM admin_panel ORDER BY datetime desc;";
-                    $Execute = mysql_query($ViewQuery);
+                    $connectingDB;
+                    $Query = "SELECT *FROM comments WHERE status='ON'";
+                    $Execute = mysql_query($Query);
                     $SrNo = 0;
-                    while($DataRows = mysql_fetch_array($Execute)) {
-                        $Id = $DataRows["id"];
-                        $DateTime = $DataRows["datetime"];
-                        $Title = $DataRows["title"];
-                        $Category = $DataRows["category"];
-                        $Admin = $DataRows["author"];
-                        $Image = $DataRows["image"];
-                        $Post = $DataRows["post"];
+                    while($DataRows=mysql_fetch_array($Execute)) {
+                        $CommentId = $DataRows['id'];
+                        $CommentDate = $DataRows['datetime'];
+                        $CommentatorName = $DataRows['name'];
+                        $Comment = $DataRows['comment'];
+                        $CommentPostId = $DataRows['admin_panel_id'];
                         $SrNo++;
+                        if(strlen($Comment) > 20) { $Comment = substr($Comment,0,20).'...';}
+                        if(strlen($CommentatorName) > 10) { $CommentatorName = substr($CommentatorName,0,10).'...';}
+
                         ?>
                         <tr>
-                            <td><?php echo $SrNo; ?></td>
-                            <td style="color:#00695C;"><?php
-                                if(strlen($Title)>20){$Title = substr($Title,0,20).'..';}
-                                echo $Title;
-                                ?></td>
-                            <td><?php
-                                if(strlen($DateTime)>15){$DateTime = substr($DateTime,0,15).'..';}
-                                echo $DateTime;?></td>
-                            <td><?php echo $Admin; ?></td>
-                            <td><?php echo $Category; ?></td>
-                            <td><img src="Upload/<?php echo $Image; ?>" width="170px" height="100px"></td>
-                            <td>Processing</td>
-                            <td>
-                                <a href="EditPost.php?Edit=<?php echo $Id; ?>">
-                                    <span class="btn btn-warning">Edit</span>
-                                </a>
-                                <a href="DeletePost.php?Delete=<?php echo $Id; ?>">
-                                    <span class="btn btn-danger">Delete</span>
-                                </a>
-                            </td>
-                            <td>
-                                <a href="FullPost.php?id=<?php echo $Id;?>" target="_blank">
-                                    <span class="btn btn-primary"> Live Preview</span>
-                                </a>
-                            </td>
+                            <td><?php echo htmlentities($SrNo); ?></td>
+                            <td><?php echo htmlentities($CommentatorName); ?></td>
+                            <td><?php echo htmlentities($CommentDate); ?></td>
+                            <td><?php echo htmlentities($Comment); ?></td>
+                            <td><a href="#"><span class="btn btn-success">Approve</span></a></td>
+                            <td><a href="#"><span class="btn btn-danger">Delete</span></a></td>
+                            <td><a href="#"><span class="btn btn-primry">Live Preview</span></a></td>
                         </tr>
-                        <?php
-                    }
-                    ?>
+                    <?php } ?>
                 </table>
             </div>
         </div><!-- ending of main area -->

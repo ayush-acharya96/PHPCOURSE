@@ -19,35 +19,26 @@ if(isset($_POST["Submit"])){
     $Admin = "Ayush Acharya";
     $Image = $_FILES["Image"]["name"];
     $Target = "Upload/".basename($_FILES["Image"]["name"]);
-    if(empty($Title)){
-        $_SESSION["ErrorMessage"] = "Title can't be empty.";
-        Redirect_to("AddNewPost.php");
-    } elseif(strlen($Title) < 2){
-        $_SESSION["ErrorMessage"] = "Title should be at least 2 characters.";
-        Redirect_to("AddNewPost.php");
-    } else {
         global $ConnectingDB;
-        $EditFromURL = $_GET['Edit'];
-        $Query = "UPDATE admin_panel SET datetime='$DateTime', title ='$Title', category='$Category',author='$Admin',
-                  image='$image',post='$Post' WHERE id = '$EditFromURL' ";
+        $DeleteFromURL = $_GET['Delete'];
+        $Query = "DELETE FROM admin_panel WHERE id='$DeleteFromURL'";
 
         $Execute = mysql_query($Query);
         move_uploaded_file($_FILES["Image"]["tmp_name"],$Target);
         if($Execute) {
-            $_SESSION["SuccessMessage"] = "Post updated successfuly.";
+            $_SESSION["SuccessMessage"] = "Post deleted successfuly.";
             Redirect_to("Dashboard.php");
         } else {
             $_SESSION["ErrorMessage"] = "Something went wrong.";
             Redirect_to("Dashboard.php");
         }
-    }
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Edit Post</title>
+    <title>Delete Post</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -92,14 +83,14 @@ if(isset($_POST["Submit"])){
 
         </div> <!-- Ending of side srea -->
         <div class="col-sm-10">
-            <h1>Update Post</h1>
+            <h1>Delete Post</h1>
             <?php
                 echo Message();
                 echo SuccessMessage();
             ?>
             <div>
                 <?php
-                $SearchQueryParameter = $_GET['Edit'];
+                $SearchQueryParameter = $_GET['Delete'];
                 $ConnectingDB;
                 $Query = "SELECT * FROM admin_panel WHERE id = '$SearchQueryParameter'";
                 $ExecuteQuery = mysql_query($Query);
@@ -110,17 +101,17 @@ if(isset($_POST["Submit"])){
                     $PosttobeUpdated = $DataRows['post'];
                 }
                 ?>
-            <form action="EditPost.php?Edit=<?php echo $SearchQueryParameter; ?>" method="post" enctype="multipart/form-data">
+            <form action="DeletePost.php?Delete=<?php echo $SearchQueryParameter; ?>" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <div class="form-group">
                         <label for="title"><span class="FieldInfo">Title:</span></label>
-                        <input value="<?php echo $TitletobeUpdated; ?>" class="form-control" type="text" name="Title" id="title" placeholder="Title">
+                        <input disabled value="<?php echo $TitletobeUpdated; ?>" class="form-control" type="text" name="Title" id="title" placeholder="Title">
                     </div>
                     <div class="form-group">
                         <span class="FieldInfo">Existing Category: </span>
                         <?php echo $CategorytobeUpdated; ?><br><br>
                         <label for="categoryselect"><span class="FieldInfo">Category:</span></label>
-                        <select class="form-control" id="categoryselect" name="Category">
+                        <select disabled class="form-control" id="categoryselect" name="Category">
                             <?php
                             global $ConnectingDB;
                             $ViewQuery = "SELECT * FROM category ORDER BY datetime DESC ";
@@ -138,13 +129,13 @@ if(isset($_POST["Submit"])){
                         <img src="Upload/<?php echo $ImagetobeUpdated; ?>" height="100px" width="170px";>
                         <br><br>
                         <label for="imageselect"><span class="FieldInfo">Select Image:</span></label>
-                        <input type="File" class="form-control" name="Image" id="imageselect">
+                        <input disabled type="File" class="form-control" name="Image" id="imageselect">
                     </div>
                     <div class="form-group">
                         <label for="postarea"><span class="FieldInfo">Post:</span></label>
-                        <textarea class="form-control" name="Post" id="postarea"><?php echo $PosttobeUpdated; ?></textarea>
+                        <textarea disabled class="form-control" name="Post" id="postarea"><?php echo $PosttobeUpdated; ?></textarea>
                         <br>
-                    <input class="btn btn-primary btn-block" type="Submit" name="Submit" value="Edit Post">
+                    <input class="btn btn-danger btn-block" type="Submit" name="Submit" value="Delete Post">
                     <br>
                 </fieldset>
 
