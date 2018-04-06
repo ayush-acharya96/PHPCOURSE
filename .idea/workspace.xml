@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9958b6d8-34d2-4483-9ea6-7f09b13d64af" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/PHPCMS/DisapproveComments.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/PHPCMS/ApproveComments.php" afterPath="$PROJECT_DIR$/PHPCMS/ApproveComments.php" />
       <change beforePath="$PROJECT_DIR$/PHPCMS/Comments.php" afterPath="$PROJECT_DIR$/PHPCMS/Comments.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +48,8 @@
       <file leaf-file-name="Comments.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PHPCMS/Comments.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="170" column="18" lean-forward="true" selection-start-line="170" selection-start-column="18" selection-end-line="170" selection-end-column="18" />
+            <state relative-caret-position="159">
+              <caret line="105" column="90" lean-forward="false" selection-start-line="105" selection-start-column="90" selection-end-line="105" selection-end-column="90" />
               <folding>
                 <element signature="e#2385#2391#0#HTML" expanded="true" />
                 <element signature="e#2555#2561#0#HTML" expanded="true" />
@@ -58,14 +58,16 @@
                 <element signature="e#3066#3072#0#HTML" expanded="true" />
                 <element signature="e#3224#3230#0#HTML" expanded="true" />
                 <element signature="e#3381#3387#0#HTML" expanded="true" />
-                <element signature="e#7968#7974#0#HTML" expanded="true" />
-                <marker date="1523026729057" expanded="true" signature="4153:4174" ph="SELECT *FROM... comments" />
-                <marker date="1523026729057" expanded="true" signature="4153:4188" ph="SELECT *FROM... comments" />
-                <marker date="1523026729057" expanded="true" signature="4153:4192" ph="SELECT *FROM... comments" />
-                <marker date="1523026729057" expanded="true" signature="4153:4193" ph="SELECT *FROM... comments" />
-                <marker date="1523026729057" expanded="true" signature="4153:4211" ph="SELECT *FROM... comments" />
-                <marker date="1523026729057" expanded="true" signature="6212:6251" ph="SELECT *FROM... comments" />
-                <marker date="1523026729057" expanded="true" signature="6212:6269" ph="SELECT *FROM... comments" />
+                <element signature="e#8031#8037#0#HTML" expanded="true" />
+                <marker date="1523027197199" expanded="true" signature="4153:4174" ph="SELECT *FROM... comments" />
+                <marker date="1523027197199" expanded="true" signature="4153:4188" ph="SELECT *FROM... comments" />
+                <marker date="1523027197199" expanded="true" signature="4153:4192" ph="SELECT *FROM... comments" />
+                <marker date="1523027197199" expanded="true" signature="4153:4193" ph="SELECT *FROM... comments" />
+                <marker date="1523027197199" expanded="true" signature="4153:4211" ph="SELECT *FROM... comments" />
+                <marker date="1523027197199" expanded="true" signature="4153:4216" ph="SELECT *FROM... comments" />
+                <marker date="1523027197199" expanded="true" signature="6218:6257" ph="SELECT *FROM... comments" />
+                <marker date="1523027197199" expanded="true" signature="6218:6275" ph="SELECT *FROM... comments" />
+                <marker date="1523027197199" expanded="true" signature="6218:6280" ph="SELECT *FROM... comments" />
               </folding>
             </state>
           </provider>
@@ -79,6 +81,18 @@
               <folding>
                 <marker date="1523004321943" expanded="true" signature="230:263" ph="UPDATE comments... " />
                 <marker date="1523004321943" expanded="true" signature="230:287" ph="UPDATE comments... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DisapproveComments.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHPCMS/DisapproveComments.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+              <folding>
+                <marker date="1523026997361" expanded="true" signature="230:288" ph="UPDATE comments... " />
               </folding>
             </state>
           </provider>
@@ -117,6 +131,7 @@
         <option value="$PROJECT_DIR$/PHPCMS/Dashboard.php" />
         <option value="$PROJECT_DIR$/PHPCMS/FullPost.php" />
         <option value="$PROJECT_DIR$/PHPCMS/ApproveComments.php" />
+        <option value="$PROJECT_DIR$/PHPCMS/DisapproveComments.php" />
         <option value="$PROJECT_DIR$/PHPCMS/Comments.php" />
       </list>
     </option>
@@ -169,12 +184,6 @@
               <item name="PHPCOURSE" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="PHPCMS" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PHPCOURSE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PHPCOURSE" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="PHPCMS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Include" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -233,12 +242,12 @@
       <workItem from="1521946766700" duration="9586000" />
       <workItem from="1522360152067" duration="9069000" />
       <workItem from="1523002685334" duration="2409000" />
-      <workItem from="1523005151749" duration="984000" />
+      <workItem from="1523005151749" duration="1383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62417000" />
+    <option name="totallyTimeSpent" value="62816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="860" y="3" width="1072" height="1098" extended-state="0" />
@@ -278,13 +287,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PHPCMS/css/publicstyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHPCMS/Dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3675">
@@ -643,6 +645,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PHPCMS/DisapproveComments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+          <folding>
+            <marker date="1523026997361" expanded="true" signature="230:288" ph="UPDATE comments... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PHPCMS/ApproveComments.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -656,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PHPCMS/Comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="170" column="18" lean-forward="true" selection-start-line="170" selection-start-column="18" selection-end-line="170" selection-end-column="18" />
+        <state relative-caret-position="159">
+          <caret line="105" column="90" lean-forward="false" selection-start-line="105" selection-start-column="90" selection-end-line="105" selection-end-column="90" />
           <folding>
             <element signature="e#2385#2391#0#HTML" expanded="true" />
             <element signature="e#2555#2561#0#HTML" expanded="true" />
@@ -666,14 +678,16 @@
             <element signature="e#3066#3072#0#HTML" expanded="true" />
             <element signature="e#3224#3230#0#HTML" expanded="true" />
             <element signature="e#3381#3387#0#HTML" expanded="true" />
-            <element signature="e#7968#7974#0#HTML" expanded="true" />
-            <marker date="1523026729057" expanded="true" signature="4153:4174" ph="SELECT *FROM... comments" />
-            <marker date="1523026729057" expanded="true" signature="4153:4188" ph="SELECT *FROM... comments" />
-            <marker date="1523026729057" expanded="true" signature="4153:4192" ph="SELECT *FROM... comments" />
-            <marker date="1523026729057" expanded="true" signature="4153:4193" ph="SELECT *FROM... comments" />
-            <marker date="1523026729057" expanded="true" signature="4153:4211" ph="SELECT *FROM... comments" />
-            <marker date="1523026729057" expanded="true" signature="6212:6251" ph="SELECT *FROM... comments" />
-            <marker date="1523026729057" expanded="true" signature="6212:6269" ph="SELECT *FROM... comments" />
+            <element signature="e#8031#8037#0#HTML" expanded="true" />
+            <marker date="1523027197199" expanded="true" signature="4153:4174" ph="SELECT *FROM... comments" />
+            <marker date="1523027197199" expanded="true" signature="4153:4188" ph="SELECT *FROM... comments" />
+            <marker date="1523027197199" expanded="true" signature="4153:4192" ph="SELECT *FROM... comments" />
+            <marker date="1523027197199" expanded="true" signature="4153:4193" ph="SELECT *FROM... comments" />
+            <marker date="1523027197199" expanded="true" signature="4153:4211" ph="SELECT *FROM... comments" />
+            <marker date="1523027197199" expanded="true" signature="4153:4216" ph="SELECT *FROM... comments" />
+            <marker date="1523027197199" expanded="true" signature="6218:6257" ph="SELECT *FROM... comments" />
+            <marker date="1523027197199" expanded="true" signature="6218:6275" ph="SELECT *FROM... comments" />
+            <marker date="1523027197199" expanded="true" signature="6218:6280" ph="SELECT *FROM... comments" />
           </folding>
         </state>
       </provider>

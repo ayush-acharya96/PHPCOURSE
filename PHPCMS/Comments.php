@@ -103,7 +103,7 @@
                 </tr>
                 <?php
                 $connectingDB;
-                $Query = "SELECT *FROM comments WHERE status='OFF' ORDER BY datetime";
+                $Query = "SELECT *FROM comments WHERE status='OFF' ORDER BY datetime DESC ";
                 $Execute = mysql_query($Query);
                 $SrNo = 0;
                 while($DataRows=mysql_fetch_array($Execute)) {
@@ -143,7 +143,7 @@
                     </tr>
                     <?php
                     $connectingDB;
-                    $Query = "SELECT *FROM comments WHERE status='ON' ORDER BY datetime";
+                    $Query = "SELECT *FROM comments WHERE status='ON' ORDER BY datetime DESC ";
                     $Execute = mysql_query($Query);
                     $SrNo = 0;
                     while($DataRows=mysql_fetch_array($Execute)) {
@@ -162,7 +162,7 @@
                             <td><?php echo htmlentities($CommentatorName); ?></td>
                             <td><?php echo htmlentities($CommentDate); ?></td>
                             <td><?php echo htmlentities($Comment); ?></td>
-                            <td><a href="#"><span class="btn btn-success">Approve</span></a></td>
+                            <td><a href="DisapproveComments.php?id=<?php echo $CommentId?>"><span class="btn btn-primary">Disapprove</span></a></td>
                             <td><a href="#"><span class="btn btn-danger">Delete</span></a></td>
                             <td><a href="FullPost.php?id=<?php echo $CommentPostId?>" target="_blank"><span class="btn btn-primry">Live Preview</span></a></td>
                         </tr>
