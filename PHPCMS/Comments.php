@@ -123,8 +123,8 @@
                     <td><?php echo htmlentities($CommentDate); ?></td>
                     <td><?php echo htmlentities($Comment); ?></td>
                     <td><a href="ApproveComments.php?id=<?php echo $CommentId; ?>"><span class="btn btn-success">Approve</span></a></td>
-                    <td><a href="#"><span class="btn btn-danger">Delete</span></a></td>
-                    <td><a href="FullPost.php?id=<?php echo $CommentPostId?>" target="_blank"><span class="btn btn-primry">Live Preview</span></a></td>
+                    <td><a href="DeleteComment.php?id=<?php echo $CommentId; ?>"><span class="btn btn-danger">Delete</span></a></td>
+                    <td><a href="FullPost.php?id=<?php echo $CommentPostId; ?>" target="_blank"><span class="btn btn-primary">Live Preview</span></a></td>
                 </tr>
                 <?php } ?>
             </table>
@@ -137,12 +137,14 @@
                         <th>Name</th>
                         <th>Date</th>
                         <th>Comment</th>
+                        <th>Approved By</th>
                         <th>Approve</th>
                         <th>Delete</th>
                         <th>Details</th>
                     </tr>
                     <?php
                     $connectingDB;
+                    $Admin = "Ayush Acharya";
                     $Query = "SELECT *FROM comments WHERE status='ON' ORDER BY datetime DESC ";
                     $Execute = mysql_query($Query);
                     $SrNo = 0;
@@ -162,9 +164,10 @@
                             <td><?php echo htmlentities($CommentatorName); ?></td>
                             <td><?php echo htmlentities($CommentDate); ?></td>
                             <td><?php echo htmlentities($Comment); ?></td>
-                            <td><a href="DisapproveComments.php?id=<?php echo $CommentId?>"><span class="btn btn-primary">Disapprove</span></a></td>
-                            <td><a href="#"><span class="btn btn-danger">Delete</span></a></td>
-                            <td><a href="FullPost.php?id=<?php echo $CommentPostId?>" target="_blank"><span class="btn btn-primry">Live Preview</span></a></td>
+                            <td><?php echo htmlentities($Admin); ?></td>
+                            <td><a href="DisapproveComments.php?id=<?php echo $CommentId; ?>"><span class="btn btn-warning">Disapprove</span></a></td>
+                            <td><a href="DeleteComment.php?id=<?php echo $CommentId; ?>"><span class="btn btn-danger">Delete</span></a></td>
+                            <td><a href="FullPost.php?id=<?php echo $CommentPostId; ?>" target="_blank"><span class="btn btn-primary">Live Preview</span></a></td>
                         </tr>
                     <?php } ?>
                 </table>
