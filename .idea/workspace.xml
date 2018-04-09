@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9958b6d8-34d2-4483-9ea6-7f09b13d64af" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/PHPCMS/DeleteCategory.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/PHPCMS/Categories.php" afterPath="$PROJECT_DIR$/PHPCMS/Categories.php" />
+      <change beforePath="$PROJECT_DIR$/PHPCMS/Admins.php" afterPath="$PROJECT_DIR$/PHPCMS/Admins.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,10 +17,9 @@
       <file leaf-file-name="Dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHPCMS/Dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="85" column="71" lean-forward="false" selection-start-line="85" selection-start-column="71" selection-end-line="85" selection-end-column="71" />
+            <state relative-caret-position="23">
+              <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
               <folding>
-                <element signature="e#4116#4122#0#HTML" expanded="true" />
                 <marker date="1523165792791" expanded="true" signature="185:204" ph="..." />
                 <marker date="1523165792791" expanded="true" signature="466:478" ph="..." />
                 <marker date="1523165792791" expanded="true" signature="3190:3240" ph="SELECT COUNT... comments" />
@@ -34,26 +32,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DisapproveComments.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHPCMS/DisapproveComments.php">
+      <file leaf-file-name="Categories.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHPCMS/Categories.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+            <state relative-caret-position="483">
+              <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
               <folding>
-                <marker date="1523026997361" expanded="true" signature="230:288" ph="UPDATE comments... " />
+                <marker date="1523184448689" expanded="true" signature="751:857" ph="INSERT INTO category... " />
+                <marker date="1523184448689" expanded="true" signature="4339:4384" ph="SELECT * FRO... category" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteComment.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PHPCMS/DeleteComment.php">
+      <file leaf-file-name="Admins.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHPCMS/Admins.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+            <state relative-caret-position="575">
+              <caret line="145" column="81" lean-forward="false" selection-start-line="145" selection-start-column="81" selection-end-line="145" selection-end-column="81" />
               <folding>
-                <marker date="1523028050030" expanded="true" signature="230:274" ph="DELETE FROM comments... " />
-                <marker date="1523028050030" expanded="true" signature="241:274" ph="UPDATE comments... " />
+                <marker date="1523292158496" expanded="true" signature="1057:1188" ph="INSERT INTO category... " />
+                <marker date="1523292158496" expanded="true" signature="5268:5317" ph="SELECT * FRO... category" />
               </folding>
             </state>
           </provider>
@@ -62,7 +61,7 @@
       <file leaf-file-name="DeleteCategory.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PHPCMS/DeleteCategory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="345">
               <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
               <folding>
                 <marker date="1523184831415" expanded="true" signature="230:274" ph="DELETE FROM category... " />
@@ -71,14 +70,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Categories.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PHPCMS/Categories.php">
+      <file leaf-file-name="DeleteAdmin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PHPCMS/DeleteAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3325">
-              <caret line="133" column="121" lean-forward="false" selection-start-line="133" selection-start-column="121" selection-end-line="133" selection-end-column="121" />
+            <state relative-caret-position="345">
+              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding>
-                <marker date="1523184448689" expanded="true" signature="751:857" ph="INSERT INTO category... " />
-                <marker date="1523184448689" expanded="true" signature="4339:4384" ph="SELECT * FRO... category" />
+                <marker date="1523292236842" expanded="true" signature="230:278" ph="DELETE FROM registration... " />
               </folding>
             </state>
           </provider>
@@ -121,6 +119,8 @@
         <option value="$PROJECT_DIR$/PHPCMS/Dashboard.php" />
         <option value="$PROJECT_DIR$/PHPCMS/Categories.php" />
         <option value="$PROJECT_DIR$/PHPCMS/DeleteCategory.php" />
+        <option value="$PROJECT_DIR$/PHPCMS/Admins.php" />
+        <option value="$PROJECT_DIR$/PHPCMS/DeleteAdmin.php" />
       </list>
     </option>
   </component>
@@ -131,7 +131,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -155,6 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,14 +178,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -230,18 +230,22 @@
       <workItem from="1521946766700" duration="9586000" />
       <workItem from="1522360152067" duration="9069000" />
       <workItem from="1523002685334" duration="2409000" />
-      <workItem from="1523005151749" duration="6146000" />
+      <workItem from="1523005151749" duration="7304000" />
+      <workItem from="1523244321245" duration="605000" />
+      <workItem from="1523244962726" duration="38000" />
+      <workItem from="1523259333799" duration="108000" />
+      <workItem from="1523259472720" duration="3751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67579000" />
+    <option name="totallyTimeSpent" value="73239000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.085653104" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13697916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -275,37 +279,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PHPCMS/Blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2225">
-          <caret line="89" column="77" lean-forward="false" selection-start-line="89" selection-start-column="77" selection-end-line="89" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHPCMS/css/publicstyles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHPCMS/Dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3675">
-          <caret line="147" column="8" lean-forward="false" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="8" />
-          <folding>
-            <element signature="e#4116#4122#0#HTML" expanded="true" />
-            <marker date="1523165792791" expanded="true" signature="185:204" ph="..." />
-            <marker date="1523165792791" expanded="true" signature="466:478" ph="..." />
-            <marker date="1523165792791" expanded="true" signature="3190:3240" ph="SELECT COUNT... comments" />
-            <marker date="1523165792791" expanded="true" signature="5034:5081" ph="SELECT *FROM... admin_panel" />
-            <marker date="1523165792791" expanded="true" signature="6588:6646" ph="SELECT COUNT... comments" />
-            <marker date="1523165792791" expanded="true" signature="6588:6664" ph="SELECT COUNT... comments" />
-            <marker date="1523165792791" expanded="true" signature="7427:7504" ph="SELECT COUNT... comments" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHPCMS/css/adminstyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -488,13 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHPCMS/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DB&amp;PHP/Update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2285">
@@ -558,29 +524,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHPCMS/css/adminstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PHPCMS/EditPost.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <marker date="1522061844163" expanded="true" signature="1007:1050" ph="UPDATE admin_panel... " />
-            <marker date="1522061844163" expanded="true" signature="1007:1067" ph="UPDATE admin_panel... " />
-            <marker date="1522061844163" expanded="true" signature="1007:1089" ph="UPDATE admin_panel... " />
-            <marker date="1522061844163" expanded="true" signature="1007:1105" ph="UPDATE admin_panel... " />
-            <marker date="1522061844163" expanded="true" signature="1007:1139" ph="UPDATE admin_panel... " />
-            <marker date="1522061844163" expanded="true" signature="1007:1152" ph="UPDATE admin_panel... " />
-            <marker date="1522061844163" expanded="true" signature="1007:1178" ph="UPDATE admin_panel... " />
-            <marker date="1522061844163" expanded="true" signature="3761:3797" ph="SELECT * FRO... admin_panel" />
-            <marker date="1522061844163" expanded="true" signature="3761:3821" ph="SELECT * FRO... admin_panel" />
-            <marker date="1522061844163" expanded="true" signature="5198:5243" ph="SELECT * FRO... category" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -595,13 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4025">
           <caret line="161" column="125" lean-forward="false" selection-start-line="161" selection-start-column="125" selection-end-line="161" selection-end-column="125" />
-          <folding>
-            <marker date="1522397152259" expanded="true" signature="817:970" ph="INSERT INTO comments... " />
-            <marker date="1522397152259" expanded="true" signature="1361:1380" ph="..." />
-            <marker date="1522397152259" expanded="true" signature="4462:4738" ph="SELECT * FRO... admin_panel" />
-            <marker date="1522397152259" expanded="true" signature="4850:4960" ph="SELECT * FRO... admin_panel" />
-            <marker date="1522397152259" expanded="true" signature="6637:6717" ph="SELECT * FRO... comments" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,10 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-          <folding>
-            <marker date="1523004321943" expanded="true" signature="230:263" ph="UPDATE comments... " />
-            <marker date="1523004321943" expanded="true" signature="230:287" ph="UPDATE comments... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -620,21 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <marker date="1522062864250" expanded="true" signature="724:773" ph="DELETE FROM admin_panel... " />
-            <marker date="1522062864250" expanded="true" signature="3353:3413" ph="SELECT * FRO... admin_panel" />
-            <marker date="1522062864250" expanded="true" signature="4812:4857" ph="SELECT * FRO... category" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHPCMS/DisapproveComments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding>
-            <marker date="1523026997361" expanded="true" signature="230:288" ph="UPDATE comments... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -642,34 +563,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="125" column="54" lean-forward="false" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPCMS/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ForEachLoops.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPCMS/DeleteComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
           <folding>
-            <element signature="e#2385#2391#0#HTML" expanded="true" />
-            <element signature="e#2555#2561#0#HTML" expanded="true" />
-            <element signature="e#2725#2731#0#HTML" expanded="true" />
-            <element signature="e#2880#2886#0#HTML" expanded="true" />
-            <element signature="e#3066#3072#0#HTML" expanded="true" />
-            <element signature="e#3224#3230#0#HTML" expanded="true" />
-            <element signature="e#3381#3387#0#HTML" expanded="true" />
-            <element signature="e#8293#8299#0#HTML" expanded="true" />
-            <marker date="1523028129536" expanded="true" signature="4153:4174" ph="SELECT *FROM... comments" />
-            <marker date="1523028129536" expanded="true" signature="4153:4188" ph="SELECT *FROM... comments" />
-            <marker date="1523028129536" expanded="true" signature="4153:4192" ph="SELECT *FROM... comments" />
-            <marker date="1523028129536" expanded="true" signature="4153:4193" ph="SELECT *FROM... comments" />
-            <marker date="1523028129536" expanded="true" signature="4153:4211" ph="SELECT *FROM... comments" />
-            <marker date="1523028129536" expanded="true" signature="4153:4216" ph="SELECT *FROM... comments" />
-            <marker date="1523028129536" expanded="true" signature="6357:6396" ph="SELECT *FROM... comments" />
-            <marker date="1523028129536" expanded="true" signature="6357:6414" ph="SELECT *FROM... comments" />
-            <marker date="1523028129536" expanded="true" signature="6357:6419" ph="SELECT *FROM... comments" />
+            <marker date="1523028050030" expanded="true" signature="230:274" ph="DELETE FROM comments... " />
+            <marker date="1523028050030" expanded="true" signature="241:274" ph="UPDATE comments... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPCMS/DisapproveComments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="2" lean-forward="false" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <marker date="1523026997361" expanded="true" signature="230:288" ph="UPDATE comments... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PHPCMS/Dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="85" column="71" lean-forward="false" selection-start-line="85" selection-start-column="71" selection-end-line="85" selection-end-column="71" />
+        <state relative-caret-position="23">
+          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
           <folding>
-            <element signature="e#4116#4122#0#HTML" expanded="true" />
             <marker date="1523165792791" expanded="true" signature="185:204" ph="..." />
             <marker date="1523165792791" expanded="true" signature="466:478" ph="..." />
             <marker date="1523165792791" expanded="true" signature="3190:3240" ph="SELECT COUNT... comments" />
@@ -681,20 +618,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHPCMS/DeleteComment.php">
+    <entry file="file://$PROJECT_DIR$/PHPCMS/css/adminstyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+        <state relative-caret-position="253">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPCMS/Categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
           <folding>
-            <marker date="1523028050030" expanded="true" signature="230:274" ph="DELETE FROM comments... " />
-            <marker date="1523028050030" expanded="true" signature="241:274" ph="UPDATE comments... " />
+            <marker date="1523184448689" expanded="true" signature="751:857" ph="INSERT INTO category... " />
+            <marker date="1523184448689" expanded="true" signature="4339:4384" ph="SELECT * FRO... category" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPCMS/Admins.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="145" column="81" lean-forward="false" selection-start-line="145" selection-start-column="81" selection-end-line="145" selection-end-column="81" />
+          <folding>
+            <marker date="1523292158496" expanded="true" signature="1057:1188" ph="INSERT INTO category... " />
+            <marker date="1523292158496" expanded="true" signature="5268:5317" ph="SELECT * FRO... category" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PHPCMS/DeleteCategory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="345">
           <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
             <marker date="1523184831415" expanded="true" signature="230:274" ph="DELETE FROM category... " />
@@ -702,13 +658,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHPCMS/Categories.php">
+    <entry file="file://$PROJECT_DIR$/PHPCMS/DeleteAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3325">
-          <caret line="133" column="121" lean-forward="false" selection-start-line="133" selection-start-column="121" selection-end-line="133" selection-end-column="121" />
+        <state relative-caret-position="345">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
-            <marker date="1523184448689" expanded="true" signature="751:857" ph="INSERT INTO category... " />
-            <marker date="1523184448689" expanded="true" signature="4339:4384" ph="SELECT * FRO... category" />
+            <marker date="1523292236842" expanded="true" signature="230:278" ph="DELETE FROM registration... " />
           </folding>
         </state>
       </provider>
